@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Demo &raquo; MySide &raquo; gridster.js</title>
+    <link rel="stylesheet" type="text/css" href="dist/jquery.gridster.css">
+    <link rel="stylesheet" type="text/css" href="assets/demo.css">
+</head>
+
+
+<body>
+    <script type="text/javascript" src="assets/jquery.js"></script>
+    <script src="dist/jquery.gridster.js" type="text/javascript" charset="utf-8"></script>
+
+
+<div class="gridster">
+    <ul id="Labbresultat">
+        <li id="liL" data-row="1" data-col="1" data-sizex="1" data-sizey="1"><h3>Laboration</h3></li>
+        <li id="liU" data-row="1" data-col="2" data-sizex="1" data-sizey="1"><h3>Uppgift</h3></li>
+        <li id="liS" data-row="1" data-col="3" data-sizex="1" data-sizey="1"><h3>Status</h3></li>
+        <li id="liR" data-row="1" data-col="4" data-sizex="2" data-sizey="1"><h3>Redovisad</h3></li>
+     
+        <li id="li1" data-row="2" data-col="1" data-sizex="1" data-sizey="4">1</li> 
+        <li id="li22" data-row="2" data-col="2" data-sizex="1" data-sizey="1">1</li>
+        <li id="li23" data-row="3" data-col="2" data-sizex="1" data-sizey="1">2</li>
+        <li id="li24" data-row="4" data-col="2" data-sizex="1" data-sizey="1">3</li>
+        <li id="li25" data-row="5" data-col="2" data-sizex="1" data-sizey="1">4</li>
+ 
+        <li id="li32" data-row="2" data-col="3" data-sizex="1" data-sizey="1">Godkänd</li>
+        <li id="li33" data-row="3" data-col="3" data-sizex="1" data-sizey="1">Underkänd</li>
+        <li id="li34" data-row="4" data-col="3" data-sizex="1" data-sizey="1">Godkänd</li>
+        <li id="li35" data-row="5" data-col="3" data-sizex="1" data-sizey="1">Godkänd</li>
+
+        <li id="li42" data-row="2" data-col="4" data-sizex="2" data-sizey="1">140915</li>
+        <li id="li43" data-row="3" data-col="4" data-sizex="2" data-sizey="1">140915</li>
+        <li id="li44" data-row="4" data-col="4" data-sizex="2" data-sizey="1">140915</li>
+        <li id="li45" data-row="5" data-col="4" data-sizex="2" data-sizey="1">140915</li>
+
+    </ul>
+</div>
+    <script type="text/javascript">
+        var gridster;
+
+        $(function () {
+
+            gridster = $(".gridster ul").gridster({
+                widget_base_dimensions: [100, 100],
+                widget_margins: [5, 5],
+                helper: 'clone',
+                resize: {
+                    enabled: true
+                }
+            }).data('gridster');
+        });
+      
+    </script>
+    
+</body>
+</html>
