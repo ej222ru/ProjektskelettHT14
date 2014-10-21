@@ -34,11 +34,17 @@ body {
 
 .gridster li {
     font-size: 1em;
-    font-weight: bold;
     text-align: center;
     line-height: 100%;
+    text-overflow : clip;    
+    border : 1px solid black;
+    overflow : hidden;
+    text-overflow : ellipsis;   
+        
 }
-
+.description h3, h5 {
+    font-weight: bold;        
+}
 
 .gridster {
     margin: 0 auto;
@@ -69,3 +75,13 @@ body {
 
 
 img { max-width: 100%; max-height: 100%;}
+
+#Labbresultat {
+    border: solid 1px black ;
+}
+#Labbresultat th, td{
+    border: solid 1px black ;
+}
+thead, tr{
+    border: solid 1px black ;
+}
