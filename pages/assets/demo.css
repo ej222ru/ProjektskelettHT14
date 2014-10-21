@@ -85,3 +85,13 @@ img { max-width: 100%; max-height: 100%;}
 thead, tr{
     border: solid 1px black ;
 }
+
+.gridster .yellow{background:yellow;}
+.gridster .red{background:red;}
+.gridster .darkblue{background:blue;}
+.gridster .pink{background:pink;}
+.gridster .green{background:green;}
+.gridster .purple{background:purple;}
+.gridster .gray{background:#ccc;}
+.gridster .darkred{background:darkred;}
+.gridster .black{background:black;}

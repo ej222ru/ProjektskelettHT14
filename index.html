@@ -37,7 +37,6 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -48,6 +47,7 @@
 					<p>
 						<small>Created by <a href="http://gridster.net/"> Made by <a href="http://ducksboard.com/">Ducksboard</a></a></small>
 					</p>
+					<a href="?transition=cube#">Cube</a> 	
 				</section>
 
 				<section>
@@ -65,49 +65,49 @@
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
+						<h2>GoTo Demos</h2>
 						<a href="#" class="image navigate-down">
 							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="pages/gridsterDemo.html">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-			    <section id="demos">
+
+			    <section id="demos" data-background="#007777">
 			        <div class="wrapper">
 			                <h2 class="heading-xl">Demos</h2>
 			                <ul>
-			                    <li><a href="pages/mySide.html">Min labbsida</a></li>
 			                    <li><a href="pages/resize.html">Resizable widgets</a></li>
+			                    <li><a href="pages/standard.html">Standardlayout</a></li>
+			                    <li><a href="pages/standardAlt.html">Standardlayout alt</a></li>			                    
+			                    <li><a href="pages/mySide.html">Min labbsida</a></li>
 			                </ul>
 			        </div>
-			    </section>					
+			    </section>		
+			    
+
+					
+					<section>
+						<h2>Byggstenar i HTML</h2>
+	
+						<ul>
+							<li> div class="gridster" </li>
+							<li>lists</li>
+							<p>Genom att kombinera liten basdimension med större data-size får man större flexibilitet</p>
+							<li>widget_base_dimensions: [70, 70] </li>
+	            <li>data-sizex="4" data-sizey="4"</li>
+							<p>Jämfört med </p>
+							<li>widget_base_dimensions: [4, 4] </li>
+	            <li>data-sizex="70" data-sizey="70"</li>
+	             <li>poisitionering: data-row="3" data-col="3" </li>           
+						</ul>
+					</section>		
+					
 					<section>
 						<h2>Basement Level 2</h2>
 						<p>Cornify</p>
 						<a class="test" href="http://cornify.com">
 							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
 						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					</section>					
 				</section>
 
 				<section>
@@ -117,93 +117,23 @@
 					</p>
 				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
+	
 				<section data-markdown>
 					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+						## Inkludera jquery och gridster 
 
 						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
+						    <link rel="stylesheet" type="text/css" href="dist/jquery.gridster.css">
+						    <link rel="stylesheet" type="text/css" href="assets/demo.css">
+						    <script type="text/javascript" src="assets/jquery.js"></ script>
+						    <script src="dist/jquery.gridster.js" type="text/javascript" charset="utf-8"></ script>
 						```
 					</script>
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
 
 				<section>
 					<h2>Global State</h2>
@@ -405,6 +335,5 @@ function linkify( selector ) {
 			});
 
 		</script>
-
 	</body>
 </html>
