@@ -1,4 +1,4 @@
-﻿.gridster * {
+.gridster * {
   margin:0;
   padding:0;
 }
@@ -30,6 +30,7 @@ body {
 
 .gridster ul {
     background-color: #EFEFEF;
+ 
 }
 
 .gridster li {

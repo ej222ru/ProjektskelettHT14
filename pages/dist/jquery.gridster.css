@@ -4,6 +4,7 @@
 
 .gridster {
     position:relative;
+    list-style:none;       
 }
 
 .gridster > * {
@@ -13,6 +14,7 @@
     -o-transition: height .4s, width .4s;
     -ms-transition: height .4s, width .4s;
     transition: height .4s, width .4s;
+    
 }
 
 .gridster .gs-w {
